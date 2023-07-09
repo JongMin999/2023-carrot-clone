@@ -11,10 +11,21 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  outline: none;
+  border: 1px solid #e5e5e5;
 }
 
 .footer-icons__img {
   width: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons:hover .footer-icons__img {
+  transform: translateY(-5px);
+}
+.footer-icons__img.home-active,
+.footer-icons__img.mypage-active {
+  border: 2px solid transparent; /* 투명한 테두리 설정 */
 }
 
 .footer-icons {
